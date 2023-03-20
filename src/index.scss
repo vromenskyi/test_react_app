@@ -1,6 +1,7 @@
 $theme-colors: (
   "info": tomato,
-  "danger": rgba(233, 255, 88, 0.541)
+  "danger": rgba(233, 255, 88, 0.541),
+  "secondary": rgba(78, 21, 146, 0.764)
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss"
