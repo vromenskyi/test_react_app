@@ -21,7 +21,7 @@ const UsersList = (props: UsersRequestParams) => {
     const [users, setUsers] = useState<UserModel[]>([]);
 
     useEffect(() => {
-        axios.get(`${ApiBaseUrl}/users?page=${props.page}`)
+        axios.get(`${ApiBaseUrl}/api/users?page=${props.page}`)
         .then(response => setUsers(response.data.data))
         .catch(error => alert(JSON.stringify(error)))
     }, [props.page]);
